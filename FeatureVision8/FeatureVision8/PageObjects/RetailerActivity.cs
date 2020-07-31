@@ -72,7 +72,7 @@ namespace FeatureVision8
             Assert.IsTrue(driver._isElementPresent("xpath", "//div[@class='prompt-summary']//div[@madlibid='2']"), "Madlib Search Parameter 'Any Retailer' not present.");
             if (!clientName.ToLower().Contains("australia"))
                 Assert.IsTrue(driver._isElementPresent("xpath", "//div[@class='prompt-summary']//div[@madlibid='3']"), "Madlib Search Parameter 'Any Market' not present.");
-            Assert.IsTrue(driver._isElementPresent("xpath", "//div[@class='prompt-summary']//div[@madlibid='4']"), "Madlib Search Parameter 'Any Date' not present.");
+            Assert.IsTrue(driver._isElementPresent("id", "//div[@class='prompt-summary']//div[@madlibid='4']"), "Madlib Search Parameter 'Any Date' not present.");
 
             Assert.IsTrue(driver._waitForElement("xpath", "//li[@heading]"), "Tabs not present.");
             string[] tabNameList = new string[] { "Ads by Channel", "Pages by Channel", "Ads by Week", "Events by Week" };
